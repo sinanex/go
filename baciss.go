@@ -15,10 +15,13 @@ func main() {
 
 	var name string = "sinan"
 	fmt.Println(message(name))
+
+	add(12,45)
 }
 
-func add(a int, b int) int {
-	return a + b
+func add(a int, b int) string {
+	sum := a + b
+	return fmt.Sprintf("result %d + %d  = %d",a,b, sum)
 }
 
 func message(name string) string {
